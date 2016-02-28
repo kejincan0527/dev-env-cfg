@@ -1,5 +1,4 @@
 #Ubuntu development environment config
---------------------------------------
 ##Getting Start
 1. Install git, zsh, tmux
     * `sudo apt-get install git zsh tmux`
