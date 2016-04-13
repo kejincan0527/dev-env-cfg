@@ -45,7 +45,7 @@
 3. Ctags
     * Quickly and easily located index generator
     * `sudo apt-get install ctags`
-    * Create index by `ctags -R <dir>`
+    * Create index by `ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --if0=yes <dir>`
     * Shortcuts
         - Ctrl+] - go to definition
         - Ctrl+T - Jump back from the definition.

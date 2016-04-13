@@ -1,8 +1,8 @@
 #!/bin/bash
 if [ $1 = 'start' ];then
-	ssserver -p 8888 -k THUcst09 -m aes-256-cfb --user nobody -d start
+	ssserver -p 8888 -k XXX -m aes-256-cfb --user nobody -d start
 elif [ $1 = 'stop' ];then
 	ssserver -d stop
 elif [ $1 = 'restart' ];then
-	ssserver -p 8888 -k THUcst09 -m aes-256-cfb --user nobody -d restart
+	ssserver -p 8888 -k XXX -m aes-256-cfb --user nobody -d restart
 fi

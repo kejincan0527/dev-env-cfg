@@ -47,6 +47,9 @@ filetype plugin indent on
 
 colo slate
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype css setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=4 sts=4 sw=4 expandtab
 
 let g:Powerline_symbols = 'unicode'
 
@@ -70,6 +73,7 @@ endif
 
 " for ctags
 noremap <C-T> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --if0=yes . <CR>
+set tags=./tags;/
 
 " for Youdao Dict
 vnoremap <silent> <C-Y> <Esc>:Ydv<CR>
@@ -88,9 +92,9 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 let g:ycm_filetype_blacklist = {'tagbar' : 1,'qf' : 1,'notes' : 1,'unite' : 1,'vimwiki' : 1,}
 
-nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
-nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
-nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap gl :YcmCompleter GoToDeclaration<CR>
+nnoremap gf :YcmCompleter GoToDefinition<CR>
+nnoremap gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <C-K> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " for syntastic
