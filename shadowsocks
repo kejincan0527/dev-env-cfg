@@ -1,8 +1,11 @@
 #!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 if [ $1 = 'start' ];then
 	ssserver -p 8888 -k XXX -m aes-256-cfb --user nobody -d start
 elif [ $1 = 'stop' ];then
 	ssserver -d stop
-elif [ $1 = 'restart' ];then
+elif [ $1 = 'reload' ];then
 	ssserver -p 8888 -k XXX -m aes-256-cfb --user nobody -d restart
+elif [ $1 = 'status' ];then
+	echo "Usage: $0{start|stop|restart|status}"
 fi

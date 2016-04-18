@@ -56,5 +56,6 @@
 5. ShadowSocks
     * Socks5 proxy
     * `pip install shadowsocks`
+    * open shadowsocks & change with your own password
     * `cp shadowsocks /etc/init.d`
     * `service shadowsocks start`
