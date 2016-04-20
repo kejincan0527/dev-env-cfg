@@ -42,14 +42,13 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'funorpain/vim-cpplint'
 Bundle 'taglist.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'jicong/YCM-Static-Generator'
 
 filetype plugin indent on
 
 colo slate
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype css setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype html setlocal ts=4 sts=4 sw=4 expandtab
+autocmd Filetype ruby,javascript,css setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype html,vim setlocal ts=4 sts=4 sw=4 expandtab
 
 let g:Powerline_symbols = 'unicode'
 
@@ -95,7 +94,6 @@ let g:ycm_filetype_blacklist = {'tagbar' : 1,'qf' : 1,'notes' : 1,'unite' : 1,'v
 nnoremap gl :YcmCompleter GoToDeclaration<CR>
 nnoremap gf :YcmCompleter GoToDefinition<CR>
 nnoremap gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <C-K> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " for syntastic
 set statusline+=%#warningmsg#
